@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 from django.db import models
-
+from ckeditor.fields import RichTextField
 
 class Part(models.Model):
     def __str__(self):
@@ -15,7 +15,7 @@ class Article(models.Model):
 
     part = models.ForeignKey(Part)
     title = models.CharField(max_length=20)
-    content = models.TextField()
+    content = RichTextField()
     desc = models.CharField(max_length=150)
     thumbnail = models.TextField()
     create_time = models.DateTimeField('created time')
