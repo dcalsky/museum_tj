@@ -9,7 +9,7 @@ class PartAdmin(admin.ModelAdmin):
 
 
 class ArticleAdmin(admin.ModelAdmin):
-    list_display = ['title', 'get_part_name']
+    list_display = ['title', 'part']
 
 admin.site.register(Article, ArticleAdmin)
 
