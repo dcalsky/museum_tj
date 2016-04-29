@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'article',
+
+
+    'museum_tj.article',
+    'museum_tj.core',
     'ckeditor'
 ]
 
