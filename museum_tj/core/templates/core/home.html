@@ -6,5 +6,9 @@
 </head>
 <body>
     <h1>博物馆欢迎你</h1>
+{% for news_item in news %}
+    {{ news_item.desc }}
+    <br/>
+{% endfor %}
 </body>
 </html>
