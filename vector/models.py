@@ -12,7 +12,7 @@ class Part(models.Model):
 class Article(models.Model):
     part = models.ForeignKey(Part)
     title = models.CharField(max_length=40)
-    desc = models.CharField(max_length=150)
+    desc = models.CharField(max_length=150, blank=True)
     content = models.TextField()
     create_time = models.DateTimeField()
     thumbnail = models.ImageField()

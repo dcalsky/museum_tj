@@ -18,11 +18,14 @@ from django.contrib import admin
 
 from vector import views as view_vector
 from core import views as view_home
+from appoint import views as view_appoint
+
 
 
 urlpatterns = [
     url(r'^$', view_home.home, name='home'),
     url(r'^admin/', admin.site.urls),
-    url(r'^vector/(?P<part_name>\w+)/', include('vector.urls'), name='part'),
-    url(r'^search$', view_home.search, name='search')
+    url(r'^part/(?P<part_name>\w+)/', include('vector.urls'), name='part'),
+    url(r'^search$', view_home.search, name='search'),
+    url(r'^appoint$', view_appoint.apply_appoint, name='appoint')
 ]
