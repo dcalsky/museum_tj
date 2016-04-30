@@ -19,8 +19,10 @@ from django.contrib import admin
 from vector import views as view_vector
 from core import views as view_home
 
+
 urlpatterns = [
     url(r'^$', view_home.home, name='home'),
     url(r'^admin/', admin.site.urls),
-    url(r'^(?P<part_name>\w+)/', include('vector.urls'), name='part')
+    url(r'^vector/(?P<part_name>\w+)/', include('vector.urls'), name='part'),
+    url(r'^search$', view_home.search, name='search')
 ]

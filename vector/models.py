@@ -13,6 +13,7 @@ class Article(models.Model):
     part = models.ForeignKey(Part)
     title = models.CharField(max_length=40)
     desc = models.CharField(max_length=150)
+    content = models.TextField()
     create_time = models.DateTimeField()
     thumbnail = models.ImageField()
     secret = models.BooleanField(default=False)

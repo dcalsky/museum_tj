@@ -1,4 +1,12 @@
 {% extends 'search/main.html' %}
 {% block detail %}
-    search
+    {% if results %}
+        {% for article in results %}
+           {{ article.title }}
+            <br />
+            {{ article.content }}
+        {% endfor %}
+    {% else %}
+        nothing...
+    {% endif %}
 {% endblock %}

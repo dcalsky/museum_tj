@@ -1,6 +1,7 @@
 # coding=utf-8
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.db.models import Q
 
 from vector.models import Article, Part
 
@@ -18,5 +19,10 @@ def home(request):
     })
 
 
-def part(request):
-    return HttpResponse("part")
+def search(request):
+    keywords = request.GET.get('keywords').strip()
+    results = Article.objects.filter(Q(title__contains=keywords) | Q(content__contains=keywords))
+    return render(request, 'search/detail.html', {
+        'results': results
+    })
+
