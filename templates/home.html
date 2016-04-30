@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta keywords="同济大学 博物馆">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>同济大学博物馆 | Museum of The Tongji University</title>
+    <link rel="icon" type="image/png" href="{% static 'common/img/favicon.png' %}">
+    <script src="{% static 'common/js/jquery-2.1.4.min.js' %}"></script>
+
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    {% block main %}
+    {% endblock %}
+    <script src="{% static 'common/js/main.js' %}"></script>
+</body>
+</html>

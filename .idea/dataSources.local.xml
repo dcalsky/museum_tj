@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - museum@localhost" uuid="1dde8f10-3b93-46d3-8ba9-a85bd9b0b172">
+      <secret-storage>master_key</secret-storage>
+      <user-name>dcalsky</user-name>
+      <schema-pattern>museum.pg_catalog museum.public</schema-pattern>
+      <default-schemas>museum.public</default-schemas>
+    </data-source>
+  </component>
+</project>

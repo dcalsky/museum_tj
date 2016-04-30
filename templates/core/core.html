@@ -1,0 +1,20 @@
+{% extends 'home.html' %}
+{% block main %}
+    <h1>博物馆欢迎你</h1>
+    {% block slider %}
+        <p>轮播图:</p>
+            {% for slider_item in sliders %}
+            {{ slider_item.desc }}
+            来自
+            {{ slider_item.part }}
+            <br/>
+        {% endfor %}
+    {% endblock %}
+    {% for news_item in news %}
+        {{ news_item.desc }}
+        来自
+        {{ news_item.part }}
+        <br/>
+    {% endfor %}
+{% endblock %}
+
