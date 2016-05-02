@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta keywords="同济大学 博物馆">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>同济大学博物馆 | Museum of The Tongji University</title>
     <link rel="icon" type="image/png" href="{% static 'common/img/favicon.png' %}">
     <link rel="stylesheet" href="{% static 'common/css/common.css' %}">
@@ -14,10 +13,33 @@
     {% endblock %}
 </head>
 <body>
-    {% include 'navbar.html' %}
-
+    <header id="header">
+        <ul id="navbar">
+            <div id="logo-left">
+                <li><a href=""><span>博物馆介绍</span><br/><span>HOME</span></a></li>
+                <li><a href=""><span>网上巡展</span><br/><span>EXHIBITION</span></a></li>
+                <li><a href=""><span>参观引导</span><br/><span>GUIDE</span></a></li>
+            </div>
+            <div id="logo-right">
+                <li><a href=""><span>最新资讯</span><br/><span>NEWS</span></a></li>
+                <li><a href=""><span>关于我们</span><br/><span>ABOUT</span></a></li>
+                <li><a href=""><span>相关搜索</span><br/><span>SEARCH</span></a></li>
+            </div>
+        </ul>
+        <div id="navbar-logo">
+            <img src="{% static 'common/img/tongji_logo.png' %}" alt="">
+            <p>同济大学博物馆 <br/> THE MUSEUM OF TONGJI UNIVERSITY</p>
+        </div>
+    </header>
     {% block main %}
     {% endblock %}
+
+    <footer id="footer">
+
+    </footer>
     <script src="{% static 'common/js/main.js' %}"></script>
+
+    {% block scripts %}
+    {% endblock %}
 </body>
 </html>

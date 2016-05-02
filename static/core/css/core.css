@@ -1,0 +1,21 @@
+#core {
+  position: relative;
+  margin-top: 5rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+#floor {
+  margin: 3rem 0;
+  padding: 0 10rem;
+}
+#floor li {
+  float: left;
+  padding: 1.2rem 1rem;
+  border: 1px solid #333;
+  margin: 0 3rem;
+}
+#floor ul::after {
+  content: ' ';
+  clear: both;
+  visibility: hidden;
+}

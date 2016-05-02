@@ -13,7 +13,7 @@
     "rucksack-css": "^0.8.6"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "gulp"
   },
   "author": "",
   "license": "ISC"
