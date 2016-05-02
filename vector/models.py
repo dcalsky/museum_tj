@@ -1,7 +1,6 @@
 from django.db import models
 from datetime import datetime
 
-
 class Part(models.Model):
     title = models.CharField(max_length=20)
     name = models.CharField(max_length=30)

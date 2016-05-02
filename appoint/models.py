@@ -4,8 +4,9 @@ from django.db import models
 
 class Appoint(models.Model):
     name = models.CharField(max_length=30)
+    email = models.EmailField()
     time = models.CharField(max_length=35)
-    contact = models.CharField(max_length=30)
+    phone = models.CharField(max_length=20)
     note = models.TextField(blank=True)
     finished = models.BooleanField(default=False)
 

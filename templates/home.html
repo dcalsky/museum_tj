@@ -8,24 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>同济大学博物馆 | Museum of The Tongji University</title>
     <link rel="icon" type="image/png" href="{% static 'common/img/favicon.png' %}">
+<<<<<<< HEAD:templates/base.html
     <link rel="stylesheet" href="{% static 'common/css/common.css' %}">
+    <script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
+=======
     <script src="{% static 'common/js/jquery-2.1.4.min.js' %}"></script>
+
+>>>>>>> parent of 6f99939... use gulp to parse stylus:templates/home.html
     {% block head %}
     {% endblock %}
 </head>
 <body>
-    <header>
-        <div id="navbar">
-            navbar
-        </div>
-    </header>
+    {% include 'navbar.html' %}
+
     {% block main %}
     {% endblock %}
-    <footer>
-        <div id="footer">
-            footer
-        </div>
-    </footer>
     <script src="{% static 'common/js/main.js' %}"></script>
 </body>
 </html>
