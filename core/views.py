@@ -6,18 +6,21 @@ from django.db.models import Q
 from vector.models import Article, Part
 from comment.views import _get_comments
 
+
 def home(request):
     news_part = Part.objects.get(name='news')
-    #exhibitions_part = Part.objects.get(name='网上巡展')
-    #slider_part = Part.objects.get(name='轮播图')
+    exhibitions_part = Part.objects.get(name='exhibition')
+    slider_part = Part.objects.get(name='slider')
 
-    #sliders = slider_part.article_set.order_by('create_time')[:5]
-    news = news_part.article_set.order_by('create_time')[:5]
-    #exhibitions = exhibitions_part.article_set.order_by('create_time')[:5]
-    comments = _get_comments(request)
+    sliders = slider_part.article_set.order_by('create_time')[:5] or []
+    news = news_part.article_set.order_by('create_time')[:5] or []
+    exhibitions = exhibitions_part.article_set.order_by('create_time')[:3] or []
+    comments = _get_comments(request) or []
     return render(request, 'core/core.html', {
         'news': news,
-        'comments': comments
+        'comments': comments,
+        'exhibitions': exhibitions,
+        'sliders': sliders
     })
 
 

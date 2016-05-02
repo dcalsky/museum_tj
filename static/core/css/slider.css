@@ -4,7 +4,8 @@
   color: #666;
   text-align: center;
   text-shadow: none;
-  padding: 0 16rem;
+  max-width: 710px;
+  margin: 0 auto;
 }
 .unslider img {
   width: 100%;

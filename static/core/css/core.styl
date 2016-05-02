@@ -1,19 +1,50 @@
+tongjiBlue = #283593
+
 #core
   position relative
   margin-top 5rem
   padding 0 2rem
   text-align center
 
+
+#floor h2
+  margin 3rem 0
+  span
+    padding .6rem 3rem
+    border-top 2px solid tongjiBlue
+    border-bottom 2px solid tongjiBlue
+
+
 #floor
   margin 3rem 0
-  padding 0 10rem
+  min-width 900px
   li
-    float left
-    padding 1.2rem 1rem
+    display inline-block
+    padding 1.2rem 3rem
     border 1px solid #333
-    margin 0 3rem
-
-#floor ul::after
-  content ' '
-  clear both
-  visibility: hidden
+    margin 0 2rem
+    min-width 141px
+    .title
+      font-size 1.3rem
+    .en-title
+      font-size 0.9rem
+      color #6f6f6f
+    .name
+      font-size 1rem
+      font-weight 400%
+      color #818181
+      margin-top 4rem
+    .image div
+      line-height 100px
+      height 100px
+      width 100px
+      border-radius 50%
+      margin 0 auto
+      background tongjiBlue
+      transition background 0.5s
+      &:hover
+        background tomato
+      span
+        font-size 2rem
+        font-weight 600
+        color #e7e7e7
