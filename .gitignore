@@ -133,9 +133,5 @@ ENV/
 
 # Rope project settings
 .ropeproject
-<<<<<<< HEAD
 node_modules
 static/bower_components
-=======
-
->>>>>>> parent of 6f99939... use gulp to parse stylus
