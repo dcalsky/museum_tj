@@ -134,4 +134,7 @@ ENV/
 # Rope project settings
 .ropeproject
 node_modules
+<<<<<<< HEAD
 static/bower_components
+=======
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532

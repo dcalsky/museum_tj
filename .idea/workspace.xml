@@ -42,12 +42,15 @@
                 <marker date="1462166713000" expanded="true" signature="0:469" placeholder="{&quot;name&quot;: &quot;museum_tj&quot;...}" />
                 <marker date="1462166713000" expanded="true" signature="109:172" placeholder="{&quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;...}" />
                 <marker date="1462166713000" expanded="true" signature="228:254" placeholder="{&quot;gulp&quot;: &quot;^3.9.1&quot;...}" />
+<<<<<<< HEAD
 =======
             <state relative-caret-position="165">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
 >>>>>>> parent of 6f99939... use gulp to parse stylus
+=======
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
               </folding>
             </state>
           </provider>
@@ -73,23 +76,34 @@
               <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
               <folding>
                 <marker date="1462167582000" expanded="true" signature="9:32" placeholder="{...}" />
+<<<<<<< HEAD
 =======
             <state relative-caret-position="162">
               <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
               <folding>
                 <element signature="e#15#50#0" expanded="true" />
 >>>>>>> parent of 6f99939... use gulp to parse stylus
+=======
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comment/admin.py">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
             <state relative-caret-position="341">
               <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+=======
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
               <folding />
 =======
             <state relative-caret-position="210">
@@ -103,11 +117,16 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
+=======
+      <file leaf-file-name="bower.json" pinned="false" current-in-tab="true">
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
         <entry file="file://$PROJECT_DIR$/bower.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+<<<<<<< HEAD
 =======
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appoint/models.py">
@@ -115,11 +134,14 @@
             <state relative-caret-position="90">
               <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
 >>>>>>> parent of 6f99939... use gulp to parse stylus
+=======
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name=".bowerrc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.bowerrc">
@@ -140,6 +162,11 @@
         <entry file="file://$PROJECT_DIR$/core/admin.py">
 >>>>>>> parent of 6f99939... use gulp to parse stylus
           <provider selected="true" editor-type-id="text-editor">
+=======
+      <file leaf-file-name=".bowerrc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.bowerrc">
+          <provider selected="true" editor-type-id="text-editor">
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
             <state relative-caret-position="30">
               <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
               <folding />
@@ -148,11 +175,15 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+<<<<<<< HEAD
 =======
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vector/admin.py">
@@ -160,11 +191,14 @@
             <state relative-caret-position="150">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
 >>>>>>> parent of 6f99939... use gulp to parse stylus
+=======
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/common/css/common.css">
@@ -172,6 +206,10 @@
       <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comment/tests.py">
 >>>>>>> parent of 6f99939... use gulp to parse stylus
+=======
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/common/css/common.css">
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -191,6 +229,9 @@
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
       <file leaf-file-name="core.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/core/core.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -259,8 +300,14 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 6f99939... use gulp to parse stylus
+=======
+        <option value="$PROJECT_DIR$/.bowerrc" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/bower.json" />
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
       </list>
     </option>
   </component>
@@ -375,6 +422,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -445,6 +493,12 @@
             </PATH_ELEMENT>
           </PATH>
 >>>>>>> parent of 6f99939... use gulp to parse stylus
+=======
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -756,10 +810,14 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33013698" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
 =======
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33013698" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
 >>>>>>> parent of 6f99939... use gulp to parse stylus
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33013698" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -788,6 +846,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/museum/apps.py">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -796,6 +855,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/museum/admin.py">
+=======
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1056,6 +1117,9 @@
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
             <element signature="e#0#28#0" expanded="false" />
             <marker date="1462156232000" expanded="true" signature="89:468" placeholder="..." />
             <marker date="1462156232000" expanded="true" signature="442:468" placeholder="..." />
@@ -1098,6 +1162,9 @@
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
             <element signature="e#16#48#0" expanded="false" />
             <marker date="1462156292000" expanded="true" signature="116:368" placeholder="..." />
           </folding>
@@ -1110,9 +1177,12 @@
           <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="42" />
           <folding>
             <element signature="e#0#28#0" expanded="false" />
+<<<<<<< HEAD
 =======
             <element signature="e#16#48#0" expanded="true" />
 >>>>>>> parent of 6f99939... use gulp to parse stylus
+=======
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
           </folding>
         </state>
       </provider>
@@ -1207,6 +1277,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1220,6 +1291,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <marker date="1462166713000" expanded="true" signature="0:469" placeholder="{&quot;name&quot;: &quot;museum_tj&quot;...}" />
+            <marker date="1462166713000" expanded="true" signature="109:172" placeholder="{&quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;...}" />
+            <marker date="1462166713000" expanded="true" signature="228:254" placeholder="{&quot;gulp&quot;: &quot;^3.9.1&quot;...}" />
+          </folding>
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
         </state>
       </provider>
     </entry>
@@ -1265,6 +1347,69 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+=======
+    <entry file="file://$PROJECT_DIR$/static/common.css">
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+=======
+        <state relative-caret-position="90">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <marker date="1462167582000" expanded="true" signature="9:32" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="341">
+          <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+=======
+        <state relative-caret-position="371">
+          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1293,14 +1438,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+>>>>>>> 3949cb654b427751b68ced4d0978862314e85532
           <folding />
         </state>
       </provider>
