@@ -1,0 +1,21 @@
+{
+  "name": "museum_tj",
+  "description": "museum",
+  "main": "index.js",
+  "authors": [
+    "dcalsky"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
