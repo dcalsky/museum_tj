@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.db.models import Q
 
 from vector.models import Article, Part
-
+from comment.views import _get_comments
 
 def home(request):
     news_part = Part.objects.get(name='news')
@@ -14,8 +14,10 @@ def home(request):
     #sliders = slider_part.article_set.order_by('create_time')[:5]
     news = news_part.article_set.order_by('create_time')[:5]
     #exhibitions = exhibitions_part.article_set.order_by('create_time')[:5]
+    comments = _get_comments(request)
     return render(request, 'core/core.html', {
-        'news': news
+        'news': news,
+        'comments': comments
     })
 
 

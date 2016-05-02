@@ -19,7 +19,7 @@ from django.contrib import admin
 from vector import views as view_vector
 from core import views as view_home
 from appoint import views as view_appoint
-
+from comment import views as view_comment
 
 
 urlpatterns = [
@@ -27,5 +27,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^part/(?P<part_name>\w+)/', include('vector.urls'), name='part'),
     url(r'^search$', view_home.search, name='search'),
-    url(r'^appoint$', view_appoint.apply_appoint, name='appoint')
+    url(r'^appoint$', view_appoint.apply_appoint, name='appoint'),
+    url(r'^comment$', view_comment.post_comment)
 ]
