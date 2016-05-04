@@ -7,5 +7,11 @@
       <schema-pattern>museum.pg_catalog museum.public</schema-pattern>
       <default-schemas>museum.public</default-schemas>
     </data-source>
+    <data-source name="Django default" uuid="6a504683-5869-43f8-83ed-f8d310b6e6f1">
+      <user-name>dcalsky</user-name>
+      <user-password>dfd8dfcfdfcbdfc9dfde</user-password>
+      <schema-pattern>museum.pg_catalog museum.public</schema-pattern>
+      <default-schemas>museum.public</default-schemas>
+    </data-source>
   </component>
 </project>

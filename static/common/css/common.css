@@ -16,19 +16,14 @@ ul {
   background-size: auto 11.5rem;
   line-height: 11.5rem;
   font-size: 0.8rem;
-  padding: 0 7rem;
-}
-@media screen and (max-width: 600px) {
-  #header {
-    padding: 0 3rem;
-  }
+  min-width: 900px;
 }
 #header #navbar {
   position: relative;
 }
 #navbar li {
   display: inline-block;
-  margin: 0 1.8rem;
+  margin: 0 1.6rem;
   padding: 10px;
   line-height: 1.3rem;
   text-align: center;
@@ -66,14 +61,24 @@ ul {
 }
 #navbar #logo-left {
   position: absolute;
-  left: 0;
+  left: 100px;
+}
+@media screen and (max-width: 600px) {
+  #navbar #logo-left {
+    left: 0;
+  }
 }
 #navbar #logo-left li:hover {
   border: 2px solid #f4b3c4;
 }
 #navbar #logo-right {
   position: absolute;
-  right: 0;
+  right: 100px;
+}
+@media screen and (max-width: 600px) {
+  #navbar #logo-right {
+    right: 0;
+  }
 }
 #navbar #logo-right li:hover {
   border: 2px solid #7ecef4;

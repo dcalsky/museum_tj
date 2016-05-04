@@ -135,3 +135,4 @@ ENV/
 .ropeproject
 node_modules
 static/bower_components
+static_pro
