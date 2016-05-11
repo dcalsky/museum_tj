@@ -13,7 +13,8 @@
     "rucksack-css": "^0.8.6"
   },
   "scripts": {
-    "watch": "gulp"
+    "watch": "gulp",
+    "start": "uwsgi uwsgi.ini"
   },
   "author": "",
   "license": "ISC"
