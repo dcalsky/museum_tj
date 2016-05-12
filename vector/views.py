@@ -8,7 +8,7 @@ from vector.models import Article, Part
 def get_article(request, part_name, article_id):
     try:
         article = Article.objects.get(id=article_id)
-    except:
+    except ObjectDoesNotExist:
         article = None
     return render(request, 'vector/detail.html', {
         'article': article
