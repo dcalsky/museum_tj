@@ -10,7 +10,7 @@ def get_article(request, part_name, article_id):
         article = Article.objects.get(id=article_id)
     except ObjectDoesNotExist:
         article = None
-    return render(request, 'vector/detail.html', {
+    return render(request, 'vector/article.html', {
         'article': article
     })
 

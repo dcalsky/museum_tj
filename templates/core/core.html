@@ -18,7 +18,7 @@
         <div id="slider">
             <ul>
                 <li>
-                    <img src="{% static 'core/img/wallhaven-19950.png' %}" alt="">
+                    <img src="{% static 'core/img/museum.png' %}" alt="">
                 </li>
                 <li>
                     <img src="{% static 'core/img/wallhaven-19950.png' %}" alt="">
@@ -142,6 +142,18 @@
         <div id="about">
             <h2 class="part-title">
                 <span>关于我们</span>
+                <form action="{% url 'appoint' %}" method="post">
+                    {% csrf_token %}
+                    {% if form.subject.errors %}
+                        <ol>
+                        {% for error in form.subject.errors %}
+                            <li><strong>{{ error|escape }}</strong></li>
+                        {% endfor %}
+                        </ol>
+                    {% endif %}
+                    {{ appoint_form }}
+                    <input type="submit" value="提交" />
+                </form>
             </h2>
         </div>
     </div>

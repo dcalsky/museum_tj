@@ -1,10 +1,10 @@
 # coding=utf-8
 from django.shortcuts import render
-from django.http import HttpResponse
-from django.db.models import Q
+from django.views.decorators.http import require_POST
 
 from vector.models import Article, Part
 from comment.views import _get_comments
+from appoint.forms import AppointForm
 
 
 def home(request):
@@ -16,18 +16,11 @@ def home(request):
     news = news_part.article_set.order_by('create_time')[:5] or []
     exhibitions = exhibitions_part.article_set.order_by('create_time')[:3] or []
     comments = _get_comments(request) or []
+    appoint_form = AppointForm()
     return render(request, 'core/core.html', {
         'news': news,
         'comments': comments,
         'exhibitions': exhibitions,
-        'sliders': sliders
+        'sliders': sliders,
+        'appoint_form': appoint_form
     })
-
-
-def search(request):
-    keywords = request.GET.get('keywords').strip()
-    results = Article.objects.filter(Q(title__contains=keywords) | Q(content__contains=keywords))
-    return render(request, 'search/detail.html', {
-        'results': results
-    })
-
