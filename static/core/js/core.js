@@ -16,6 +16,10 @@ Slider.prototype.init = function () {
 
 $(document).ready(function () {
     var slider = new Slider($('#slider'))
+    var newsSlider = new Slider($('#news-slider'))
     slider.init()
-
+    newsSlider.init()
+    $('#appoint-form form').submit(function(e) {
+        e.preventDefault()
+    })
 })

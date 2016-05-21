@@ -35,7 +35,7 @@
             <ul>
                 <li>
                     <div class="image">
-                        <img src="" alt="" />
+                        <img src="" alt=""/>
                         <div class="default-image">
                             <span>1F</span>
                         </div>
@@ -48,7 +48,7 @@
                 </li>
                 <li>
                     <div class="image">
-                        <img src="" alt="" />
+                        <img src="" alt=""/>
                         <div class="default-image">
                             <span>2F</span>
                         </div>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                     <div class="image">
-                        <img src="" alt="" />
+                        <img src="" alt=""/>
                         <div class="default-image">
                             <span>3F</span>
                         </div>
@@ -74,14 +74,38 @@
                 </li>
             </ul>
         </div>
-
+        <div id="appointment">
+            <div id="appoint-banner">
+                <img src="{% static 'common/img/tongji_logo.png' %}" alt="">
+                <span>团队预约参观</span>
+            </div>
+            <div id="appoint-form">
+                {% csrf_token %}
+                <form id="appoint-form" action="{% url 'appoint' %}" method="post">
+                    <div class="form-group">
+                        <div id="form-name">
+                            <input type="text" placeholder="团体名称"/>
+                        </div>
+                        <div id="form-contract">
+                            <input type="text" placeholder="联系方式"/>
+                        </div>
+                    </div>
+                    <div id="form-note">
+                        <textarea type="text" placeholder="预约详情"></textarea>
+                    </div>
+                    <div id="form-submit">
+                        <button type="submit">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
         <div id="exhibition">
             <h2 class="part-title">
                 <span>网上巡展</span>
             </h2>
             <ul>
                 <li>
-                    <div class="image"><img src="{% static 'core/img/wallhaven-19950.png' %}" alt="" />
+                    <div class="image"><img src="{% static 'core/img/wallhaven-19950.png' %}" alt=""/>
                         <div class="hover">
                             <p></p>
                             <p></p>
@@ -94,7 +118,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="image"><img src="{% static 'core/img/wallhaven-19950.png' %}" alt="" />
+                    <div class="image"><img src="{% static 'core/img/wallhaven-19950.png' %}" alt=""/>
                         <div class="hover">
                             <p></p>
                             <p></p>
@@ -107,7 +131,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="image"><img src="{% static 'core/img/wallhaven-19950.png' %}" alt="" />
+                    <div class="image"><img src="{% static 'core/img/wallhaven-19950.png' %}" alt=""/>
                         <div class="hover">
                             <p>1</p>
                             <p>2</p>
@@ -120,7 +144,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="image"><img src="{% static 'core/img/wallhaven-19950.png' %}" alt="" />
+                    <div class="image"><img src="{% static 'core/img/wallhaven-19950.png' %}" alt=""/>
                         <div class="hover">
                             <p></p>
                             <p></p>
@@ -138,30 +162,60 @@
             <h2 class="part-title">
                 <span>最新资讯</span>
             </h2>
+            <div id="news-slider">
+                <div id="bg"></div>
+                <ul>
+                    <li>
+                        <div class="img">
+                            <img src="{% static 'core/img/img.png' %}" alt=""/>
+                        </div>
+                        <div class="info">
+                            <h1 class="title">创意无极限</h1>
+                            <hr />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, aut, consequuntur distinctio dolor dolorem dolores ducimus hic ipsa libero nobis nulla officiis omnis quo reiciendis rerum sapiente vel. Provident.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="{% static 'core/img/img.png' %}" alt=""/>
+                        </div>
+                        <div class="info">
+                            <h1 class="title">创意无极限1</h1>
+                            <hr />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, aut, consequuntur distinctio dolor dolorem dolores ducimus hic ipsa libero nobis nulla officiis omnis quo reiciendis rerum sapiente vel. Provident.
+                            </p>
+                        </div>
+                    </li>
+                     <li>
+                        <div class="img">
+                            <img src="{% static 'core/img/img.png' %}" alt=""/>
+                        </div>
+                        <div class="info">
+                            <h1 class="title">创意无极限1</h1>
+                            <hr />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, aut, consequuntur distinctio dolor dolorem dolores ducimus hic ipsa libero nobis nulla officiis omnis quo reiciendis rerum sapiente vel. Provident.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div id="about">
             <h2 class="part-title">
                 <span>关于我们</span>
-                <form action="{% url 'appoint' %}" method="post">
-                    {% csrf_token %}
-                    {% if form.subject.errors %}
-                        <ol>
-                        {% for error in form.subject.errors %}
-                            <li><strong>{{ error|escape }}</strong></li>
-                        {% endfor %}
-                        </ol>
-                    {% endif %}
-                    {{ appoint_form }}
-                    <input type="submit" value="提交" />
-                </form>
+
             </h2>
         </div>
     </div>
-{#    {% for news_item in news %}#}
-{#        {{ news_item.desc }}#}
-{#        来自#}
-{#        {{ news_item.part }}#}
-{#        <br/>#}
-{#    {% endfor %}#}
+    {#    {% for news_item in news %}#}
+    {#        {{ news_item.desc }}#}
+    {#        来自#}
+    {#        {{ news_item.part }}#}
+    {#        <br/>#}
+    {#    {% endfor %}#}
 {% endblock %}
 

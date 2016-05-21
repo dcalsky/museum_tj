@@ -1,4 +1,5 @@
 tongjiBlue = #283593
+shallowBlue = #7798d2
 
 #core
   position relative
@@ -52,6 +53,65 @@ tongjiBlue = #283593
         font-weight 600
         color #e7e7e7
 
+#appointment
+  position relative
+  margin .6rem 0
+  input, textarea
+    border 1px solid #e2e2e2
+    outline none
+    padding .6rem 1.4rem
+    font-size 1rem
+  button
+    border none
+    background tongjiBlue
+    color #fff
+    font-weight 500
+    font-size 1rem
+    padding .6rem 1.4rem
+
+#appointment > div
+  display inline-block
+  margin 0 1rem
+
+#appoint-banner
+  position relative
+  width 200px
+  background #eeeeee
+  line-height 50px
+  height 50px
+  padding 1rem 2rem
+  &::after
+    position absolute
+    right -20px
+    top 30px
+    content ' '
+    width 0
+    height 0
+    border-top 10px solid transparent
+    border-left 20px solid #eee
+    border-bottom 10px solid transparent
+  span
+    font-size 1rem
+    color tongjiBlue
+  img
+    height 100%
+    padding-right .8rem
+    border-right 3px solid tongjiBlue
+
+#appoint-form
+  position relative
+  .form-group > div
+    margin .6rem 0
+  #form-note, .form-group
+    display inline-block
+    height 100%
+    margin 0 .5rem
+  #form-note textarea
+    height 100%
+  #form-submit
+    position absolute
+    bottom -30px
+    right 10px
 
 #exhibition
   padding 2rem 0
@@ -74,3 +134,46 @@ tongjiBlue = #283593
         background-color rgba(0, 0, 0, 0.1)
         width 100%
         height 100%
+
+
+#news
+  margin 2rem 0
+
+#news-slider
+  position relative
+  border 2px solid #e2e2e2
+  border-radius 5px
+  height 400px
+  #bg
+    position absolute
+    left 0
+    top 0
+    height 100%
+    width 45%
+    background shallowBlue
+  li
+    position relative
+    .img
+      background white
+      margin 40px 0 40px 40px
+      padding 20px
+      border 2px solid #e2e2e2
+      border-radius 5px
+      height 280px
+      width 300px
+      img
+        height 100%
+    .info
+      position absolute
+      top 50px
+      left 430px
+      height 250px
+      width 200px
+      .title
+        color tongjiBlue
+        font-weight 400
+      p
+        font-weight 300
+        font-size .9rem
+        line-height 1.2
+        text-align left
