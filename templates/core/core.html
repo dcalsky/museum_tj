@@ -2,6 +2,7 @@
 {% load staticfiles %}
 
 {% block head %}
+    <link rel="stylesheet" href="{% static 'bower_components/font-awesome/css/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/unslider.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/unslider-dots.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/core.css' %}">
@@ -213,14 +214,21 @@
             <h2 class="part-title">
                 <span>关于我们</span>
             </h2>
-            <img src="{% static "core/img/map.jpg" %}" alt="">
-            <div id="contract-board">
-                <div class="title">联系我们</div>
-                <div class="info"></div>
-                <form action="">
-                    <input type="text" placeholder="意见与建议"/>
-                    <button type="submit">发送</button>
-                </form>
+            <div id="about-main">
+                <img src="{% static "core/img/map.jpg" %}" alt="">
+                <div id="contract-board">
+                    <div class="title"><span>联系我们</span></div>
+                    <div class="info">
+                        <p><span><i class="fa fa-mobile" aria-hidden="true"></i>021-65983563</span><span><i
+                                class="fa fa-weixin" aria-hidden="true"></i>微信公众号: tongjiBWG</span></p>
+                        <p><span><i class="fa fa-location-arrow" aria-hidden="true"></i>地址: 中国 上海 四平路 1239号一二九大楼</span>
+                        </p>
+                    </div>
+                    <form action="">
+                        <textarea placeholder="意见与建议"></textarea>
+                        <button type="submit">发送</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

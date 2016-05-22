@@ -199,10 +199,77 @@
   text-align: left;
 }
 #about {
+  position: relative;
   margin: 2rem 0;
   min-width: 950px;
-  padding: 0 8rem;
 }
 #about img {
   width: 100%;
+}
+#about-main {
+  margin: 0 8rem;
+}
+#about #contract-board {
+  position: absolute;
+  top: 220px;
+  left: 280px;
+  height: 250px;
+  width: 420px;
+  border: 1px solid #939393;
+  background: #fff;
+}
+#about #contract-board .title {
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  height: 70px;
+  background: #283593;
+  width: 160px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  vertical-align: bottom;
+}
+#about #contract-board .title span {
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+}
+#about #contract-board .info p span {
+  margin-right: 16px;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+#about #contract-board .info p span i {
+  font-size: 1.1rem;
+  padding-right: 8px;
+  color: #283593;
+}
+#about #contract-board .info {
+  position: absolute;
+  top: 60px;
+  left: 15px;
+  text-align: left;
+}
+#about #contract-board .info p {
+  margin: 0.4rem 0;
+}
+#about #contract-board form {
+  position: absolute;
+  top: 130px;
+  left: 15px;
+}
+#about #contract-board form textarea {
+  height: 50px;
+  width: 350px;
+}
+#about #contract-board form button {
+  position: absolute;
+  right: 0;
+  bottom: -36px;
+  padding: 0.4rem 1.2rem;
+  background: #283593;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
 }
