@@ -19,7 +19,4 @@ $(document).ready(function () {
     var newsSlider = new Slider($('#news-slider'))
     slider.init()
     newsSlider.init()
-    $('#appoint-form form').submit(function(e) {
-        e.preventDefault()
-    })
 })

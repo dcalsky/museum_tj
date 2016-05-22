@@ -7,6 +7,10 @@ from .forms import AppointForm
 
 @require_POST
 def apply_appoint(request):
-    form = AppointForm(request.POST)
-    if form.is_valid():
-        return HttpResponseRedirect('/')
+    appoint = Appoint(
+        name=request.POST('name'),
+        phone=request.POST('phone'),
+        note=request.POST('note')
+    )
+    appoint.save()
+    return HttpResponse("预约成功!")

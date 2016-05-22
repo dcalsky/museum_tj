@@ -76,12 +76,11 @@
         </div>
         <div id="appointment">
             <div id="appoint-banner">
-                <img src="{% static 'common/img/tongji_logo.png' %}" alt="">
-                <span>团队预约参观</span>
+                <img src="{% static 'core/img/appointment.png' %}" alt="">
             </div>
             <div id="appoint-form">
                 {% csrf_token %}
-                <form id="appoint-form" action="{% url 'appoint' %}" method="post">
+                <form action="{% url 'appoint' %}" method="post">
                     <div class="form-group">
                         <div id="form-name">
                             <input type="text" placeholder="团体名称"/>
@@ -91,7 +90,7 @@
                         </div>
                     </div>
                     <div id="form-note">
-                        <textarea type="text" placeholder="预约详情"></textarea>
+                        <textarea placeholder="预约详情(具体时间等)"></textarea>
                     </div>
                     <div id="form-submit">
                         <button type="submit">提交</button>
@@ -171,9 +170,11 @@
                         </div>
                         <div class="info">
                             <h1 class="title">创意无极限</h1>
-                            <hr />
+                            <hr/>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, aut, consequuntur distinctio dolor dolorem dolores ducimus hic ipsa libero nobis nulla officiis omnis quo reiciendis rerum sapiente vel. Provident.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, aut,
+                                consequuntur distinctio dolor dolorem dolores ducimus hic ipsa libero nobis nulla
+                                officiis omnis quo reiciendis rerum sapiente vel. Provident.
                             </p>
                         </div>
                     </li>
@@ -183,21 +184,25 @@
                         </div>
                         <div class="info">
                             <h1 class="title">创意无极限1</h1>
-                            <hr />
+                            <hr/>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, aut, consequuntur distinctio dolor dolorem dolores ducimus hic ipsa libero nobis nulla officiis omnis quo reiciendis rerum sapiente vel. Provident.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, aut,
+                                consequuntur distinctio dolor dolorem dolores ducimus hic ipsa libero nobis nulla
+                                officiis omnis quo reiciendis rerum sapiente vel. Provident.
                             </p>
                         </div>
                     </li>
-                     <li>
+                    <li>
                         <div class="img">
                             <img src="{% static 'core/img/img.png' %}" alt=""/>
                         </div>
                         <div class="info">
                             <h1 class="title">创意无极限1</h1>
-                            <hr />
+                            <hr/>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, aut, consequuntur distinctio dolor dolorem dolores ducimus hic ipsa libero nobis nulla officiis omnis quo reiciendis rerum sapiente vel. Provident.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, aut,
+                                consequuntur distinctio dolor dolorem dolores ducimus hic ipsa libero nobis nulla
+                                officiis omnis quo reiciendis rerum sapiente vel. Provident.
                             </p>
                         </div>
                     </li>
@@ -207,8 +212,16 @@
         <div id="about">
             <h2 class="part-title">
                 <span>关于我们</span>
-
             </h2>
+            <img src="{% static "core/img/map.jpg" %}" alt="">
+            <div id="contract-board">
+                <div class="title">联系我们</div>
+                <div class="info"></div>
+                <form action="">
+                    <input type="text" placeholder="意见与建议"/>
+                    <button type="submit">发送</button>
+                </form>
+            </div>
         </div>
     </div>
     {#    {% for news_item in news %}#}

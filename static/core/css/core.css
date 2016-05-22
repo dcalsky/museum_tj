@@ -62,74 +62,65 @@
 }
 #appointment {
   position: relative;
-  margin: 0.6rem 0;
+  margin: 2rem 0;
+  min-height: 80px;
+  min-width: 950px;
+  text-align: center;
 }
 #appointment input,
 #appointment textarea {
-  border: 1px solid #e2e2e2;
-  outline: none;
-  padding: 0.6rem 1.4rem;
-  font-size: 1rem;
+  border: 1px solid #c8c8c8;
+}
+#appointment input {
+  height: 20px;
+  padding: 0.2rem 1.2rem;
+}
+#appointment textarea {
+  height: 69px;
+  min-width: 200px;
 }
 #appointment button {
-  border: none;
+  padding: 0.4rem 1.2rem;
   background: #283593;
   color: #fff;
-  font-weight: 500;
+  border: none;
   font-size: 1rem;
-  padding: 0.6rem 1.4rem;
 }
 #appointment > div {
-  display: inline-block;
   margin: 0 1rem;
 }
 #appoint-banner {
   position: relative;
-  width: 200px;
-  background: #eee;
-  line-height: 50px;
-  height: 50px;
-  padding: 1rem 2rem;
-}
-#appoint-banner::after {
-  position: absolute;
-  right: -20px;
-  top: 30px;
-  content: ' ';
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-left: 20px solid #eee;
-  border-bottom: 10px solid transparent;
-}
-#appoint-banner span {
-  font-size: 1rem;
-  color: #283593;
+  display: inline-block;
+  height: 75px;
 }
 #appoint-banner img {
   height: 100%;
-  padding-right: 0.8rem;
-  border-right: 3px solid #283593;
 }
 #appoint-form {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
 }
-#appoint-form .form-group > div {
-  margin: 0.6rem 0;
+#appoint-form .form-group {
+  position: relative;
+  margin-right: 0.6rem;
+  height: 75px;
 }
 #appoint-form #form-note,
 #appoint-form .form-group {
   display: inline-block;
-  height: 100%;
-  margin: 0 0.5rem;
+  vertical-align: top;
 }
-#appoint-form #form-note textarea {
-  height: 100%;
+#appoint-form #form-contract {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 #appoint-form #form-submit {
   position: absolute;
-  bottom: -30px;
-  right: 10px;
+  bottom: -40px;
+  right: 0;
 }
 #exhibition {
   padding: 2rem 0;
@@ -206,4 +197,12 @@
   font-size: 0.9rem;
   line-height: 1.2;
   text-align: left;
+}
+#about {
+  margin: 2rem 0;
+  min-width: 950px;
+  padding: 0 8rem;
+}
+#about img {
+  width: 100%;
 }

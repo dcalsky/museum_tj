@@ -5,4 +5,4 @@ from .models import Appoint
 class AppointForm(ModelForm):
     class Meta:
         model = Appoint
-        fields = ['name', 'email', 'time', 'phone', 'note']
+        fields = ['name', 'phone', 'note']

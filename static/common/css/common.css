@@ -16,14 +16,14 @@ ul {
   background-size: auto 11.5rem;
   line-height: 11.5rem;
   font-size: 0.8rem;
-  min-width: 900px;
+  min-width: 950px;
 }
 #header #navbar {
   position: relative;
 }
 #navbar li {
   display: inline-block;
-  margin: 0 1.6rem;
+  margin: 0 1rem;
   padding: 10px;
   line-height: 1.3rem;
   text-align: center;
