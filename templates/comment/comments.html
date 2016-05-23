@@ -1,9 +1,40 @@
 {% include 'home.html' %}
 {% load staticfiles %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'comment/css/comment.css' %}">
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'comment/js/comment.js' %}"></script>
+{% endblock %}
 {% block main %}
-    <form action="{% url 'comment' %}" method="post" target="_blank">
-        <input id="id_title" name="title" type="text" placeholder="标题"/>
-        <input id="id_content" name="content" type="text" placeholder="评论内容" />
-        <button type="submit">提交</button>
-    </form>
+    <div id="comments">
+        <ul id="comments-slider">
+            {% for comment in comments %}
+                <li>
+                    <div class="title">
+                        {{ comment.title }}
+                    </div>
+                    <div class="create_time">
+                        {{ comment.create_time }}
+                    </div>
+                    <div class="content">
+                        {{ comment.content }}
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <button id="next">Next</button>
+    </div>
+    <div id="comment-post">
+        <form action="{% url 'comment' %}" method="post" target="_blank">
+            <div class="title">
+                <input id="id_title" name="title" type="text" placeholder="标题"/>
+            </div>
+            <div class="content">
+                <textarea id="id_content" name="content" placeholder="评论内容"></textarea>
+            </div>
+            <button type="submit">提交</button>
+        </form>
+    </div>
 {% endblock %}

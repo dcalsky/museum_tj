@@ -1,0 +1,29 @@
+#comment-post {
+  text-align: center;
+}
+#comment-post .title,
+#comment-post .content {
+  text-align: center;
+}
+#comment-post input,
+#comment-post textarea {
+  border: 1px solid #c8c8c8;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.2rem 1.2rem;
+}
+#comment-post input {
+  height: 26px;
+  min-width: 300px;
+}
+#comment-post textarea {
+  height: 40px;
+  min-width: 300px;
+}
+#comment-post button {
+  padding: 0.5rem 1.4rem;
+  background: #283593;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+}
