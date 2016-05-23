@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-comment
-</body>
-</html>
+{% include 'home.html' %}
+{% load staticfiles %}
+{% block main %}
+    <form action="{% url 'comment' %}" method="post" target="_blank">
+        <input id="id_title" name="title" type="text" placeholder="标题"/>
+        <input id="id_content" name="content" type="text" placeholder="评论内容" />
+        <button type="submit">提交</button>
+    </form>
+{% endblock %}

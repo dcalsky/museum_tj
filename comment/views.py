@@ -1,12 +1,13 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from django.views.decorators.http import require_GET, require_POST
 
 from .models import Comment
 
 
-def _get_comments(request):
+def get_comments(request):
     comments = Comment.objects.filter(verify=True)
-    render(request, 'comment/comments.html', {
+    return render(request, 'comment/comments.html', {
         comments: comments
     })
 
@@ -14,10 +15,8 @@ def _get_comments(request):
 @require_POST
 def post_comment(request):
     comment = Comment(
-        title=request.POST('title'),
-        name=request.POST('name'),
-        email=request.POST('email'),
-        phone=request.POST('phone'),
-        content=request.POST('content'),
+        title=request.POST.get('title'),
+        content=request.POST.get('content'),
     )
     comment.save()
+    return HttpResponse("评论成功")

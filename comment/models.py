@@ -5,7 +5,7 @@ from datetime import datetime
 class Comment(models.Model):
     title = models.CharField(max_length=40)
     name = models.CharField(max_length=30, blank=True)
-    email = models.EmailField()
+    email = models.EmailField(blank=True)
     content = models.TextField()
     create_time = models.DateTimeField(default=datetime.today())
     verify = models.BooleanField(default=False)

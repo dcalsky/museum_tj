@@ -81,17 +81,17 @@
             </div>
             <div id="appoint-form">
                 {% csrf_token %}
-                <form action="{% url 'appoint' %}" method="post">
+                <form action="{% url 'appoint' %}" method="post" target="_blank">
                     <div class="form-group">
                         <div id="form-name">
-                            <input type="text" placeholder="团体名称"/>
+                            <input id="id_name" name="name" type="text" placeholder="团体名称"/>
                         </div>
                         <div id="form-contract">
-                            <input type="text" placeholder="联系方式"/>
+                            <input id="id_phone" name="phone" type="text" placeholder="联系方式"/>
                         </div>
                     </div>
                     <div id="form-note">
-                        <textarea placeholder="预约详情(具体时间等)"></textarea>
+                        <textarea id="id_note" name="note" placeholder="预约详情(具体时间等)"></textarea>
                     </div>
                     <div id="form-submit">
                         <button type="submit">提交</button>

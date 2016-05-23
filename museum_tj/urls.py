@@ -15,6 +15,6 @@ urlpatterns = [
     url(r'^part/(?P<part_name>\w+)/', include('vector.urls'), name='part'),
     url(r'^search$', view_search.search, name='search'),
     url(r'^appoint$', view_appoint.apply_appoint, name='appoint'),
-    url(r'^comment$', view_comment.post_comment),
+    url(r'^comment', include('comment.urls')),
     url(r'^summernote/', include('django_summernote.urls')),
 ]
