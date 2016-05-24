@@ -5,16 +5,26 @@
 function Slider(container, nextContainer) {
     this.container = container
     this.next = nextContainer
+    this.comments = []
+    this.page = 0
 }
 
-Slider.prototype.loadMore = function() {
-    console.log('next')
-    // todo ajax
+Slider.prototype.loadMore = function () {
+    this.page = this.page + 1
+    $.ajax({
+        url: '/comment/get',
+        method: 'get',
+        data: {page: this.page},
+        success: function (result) {
+            this.comments = result.content.comments
+            console.log(this.comments)
+        }
+    })
 }
 
 Slider.prototype.init = function () {
-    // todo ajax
-    this.next.click(this.loadMore)
+    this.loadMore()
+    this.next.click(this.loadMore.bind(this))
 }
 
 

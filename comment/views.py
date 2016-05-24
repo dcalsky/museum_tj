@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-from django.views.decorators.http import require_POST
+from django.views.decorators.http import require_POST, require_GET
 from django_ajax.decorators import ajax
 from .models import Comment
 
@@ -9,11 +9,11 @@ from .models import Comment
 def get_comments(request):
     return render(request, 'comment/comments.html')
 
+
 @ajax
 def next_comment(request):
     comments = Comment.objects.filter(verify=True)
     paginator = Paginator(comments, 4)  # Show 25 contacts per page
-
     page = request.GET.get('page')
     try:
         comments = paginator.page(page)

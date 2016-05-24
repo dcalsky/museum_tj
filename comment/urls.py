@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.get_comments),
-    url(r'^comment$', views.post_comment, name='comment')
+    url(r'post$', views.post_comment, name='post'),
+    url(r'get$', views.next_comment, name='get'),
 ]
