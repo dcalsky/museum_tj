@@ -3,7 +3,6 @@
 {% block head %}
     <link rel="stylesheet" href="{% static 'comment/css/comment.css' %}">
 {% endblock %}
-
 {% block scripts %}
     <script src="{% static 'comment/js/comment.js' %}"></script>
 {% endblock %}
@@ -24,6 +23,7 @@
                 </li>
             {% endfor %}
         </ul>
+        <button id="prev">Prev</button>
         <button id="next">Next</button>
     </div>
     <div id="comment-post">

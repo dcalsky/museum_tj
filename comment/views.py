@@ -23,8 +23,13 @@ def next_comment(request):
     except EmptyPage:
         # If page is out of range (e.g. 9999), deliver last page of results.
         comments = paginator.page(paginator.num_pages)
+    result = map(lambda comment: {
+        'title': comment.title,
+        'content': comment.content,
+        'create_time': str(comment.create_time)
+    }, comments)
     return {
-        'comments': comments
+        'comments': result
     }
 
 
