@@ -96,3 +96,23 @@ header {
 #navbar #logo-right li:hover {
   border: 2px solid #7ecef4;
 }
+footer {
+  text-align: center;
+  padding: 3rem 5rem;
+  margin: 3rem;
+  margin-bottom: 0;
+}
+footer > div {
+  padding: 0.7rem 0;
+}
+footer > div .title {
+  margin-right: 60px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+footer > div a,
+footer > div .record {
+  color: #767676;
+  margin-right: 30px;
+  font-size: 0.9rem;
+}
