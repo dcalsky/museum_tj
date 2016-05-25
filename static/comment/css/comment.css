@@ -27,3 +27,52 @@
   border: none;
   font-size: 1rem;
 }
+#comments {
+  position: relative;
+  height: 500px;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+#comments #comments-slider li {
+  position: absolute;
+  color: #fff;
+  background: #333;
+  padding: 1rem;
+  border-radius: 10px;
+}
+#comments #comments-slider li .point1 {
+  position: absolute;
+  top: -15px;
+  background: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #e2e2e2;
+}
+#comments #comments-slider li .point2 {
+  position: absolute;
+  top: -8px;
+  background: #283593;
+  border: 1px solid #e2e2e2;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+#comments #comments-slider li .title {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#comments #comments-slider li .create_time {
+  color: #c62828;
+  font-size: 0.8rem;
+}
+#comments #comments-slider li .content {
+  font-size: 0.7rem;
+}
+#comments #line {
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: #a52a2a;
+}

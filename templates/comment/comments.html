@@ -8,20 +8,9 @@
 {% endblock %}
 {% block main %}
     <div id="comments">
+        <div id="line"></div>
         <ul id="comments-slider">
-            {% for comment in comments %}
-                <li>
-                    <div class="title">
-                        {{ comment.title }}
-                    </div>
-                    <div class="create_time">
-                        {{ comment.create_time }}
-                    </div>
-                    <div class="content">
-                        {{ comment.content }}
-                    </div>
-                </li>
-            {% endfor %}
+
         </ul>
         <button id="prev">Prev</button>
         <button id="next">Next</button>

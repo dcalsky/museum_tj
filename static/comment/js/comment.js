@@ -5,6 +5,8 @@
 var INITIAL_PAGE = 1
 var NEXT_PAGE = 1
 var PREV_PAGE = -1
+var TOP_STEP = 130
+
 
 function Slider(container, next, prev) {
     this.container = container
@@ -15,15 +17,27 @@ function Slider(container, next, prev) {
 }
 
 Slider.prototype.next = function() {
-    this.load(NEXT_PAGE)
+    this.slide()
 }
 
 Slider.prototype.prev = function() {
+    this.slide()
     this.load(PREV_PAGE)
+}
+
+Slider.prototype.slide = function () {
+    var commentsElement = $('.comment')
+    commentsElement.each(function() {
+        var top = $(this).offsetTop
+        $(this).animate({
+            width: top + 500
+        }, 1000)
+    })
 }
 
 Slider.prototype.load = function (diff) {
     var container = this.container
+    var containerWidth = container.width()
     this.page = this.page + diff
     $.ajax({
         url: '/comment/get',
@@ -31,10 +45,12 @@ Slider.prototype.load = function (diff) {
         data: {page: this.page},
         success: function (result) {
             var comments = result.content.comments
-            var commentsElement = '<ul>'
-            comments.map(function(comment) {
-                console.log(comment)
-                commentsElement += '<li>\
+            var commentsElement = ''
+            comments.map(function(comment, i) {
+                var arrow = i % 2 === 0 ? 'right' : 'left'
+                console.log(containerWidth/2)
+                commentsElement += '<li class="comment" style="top: ' + ((i * TOP_STEP) + 20 ) + 'px;' + arrow +':'+ containerWidth / 2 + 'px">\
+                    <div class="point1" style="'+ arrow +':-15px"></div><div class="point2"  style="'+ arrow +':-8px"></div>\
                     <div class="title">\
                         ' + comment.title + '\
                     </div>\
@@ -46,7 +62,6 @@ Slider.prototype.load = function (diff) {
                     </div>\
                 </li>'
             })
-            commentsElement += '</ul>'
             container.html(commentsElement)
         }
     })

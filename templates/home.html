@@ -13,32 +13,36 @@
     <script src="{% static 'bower_components/jquery/dist/jquery.min.js' %}"></script>
 </head>
 <body>
-    <header id="header">
+<header>
+    <div id="header">
         <ul id="navbar">
             <div id="logo-left">
                 <li><a href="/"><span>博物馆介绍</span><br/><span>HOME</span></a></li>
-                <li><a href="/part/exhibition"><span>网上巡展</span><br/><span>EXHIBITION</span></a></li>
-                <li><a href="/part/guide"><span>参观引导</span><br/><span>GUIDE</span></a></li>
+                <li><a href="#exhibition"><span>网上巡展</span><br/><span>EXHIBITION</span></a></li>
+                <li><a href="#floor"><span>参观引导</span><br/><span>GUIDE</span></a></li>
             </div>
             <div id="logo-right">
-                <li><a href="/part/news"><span>最新资讯</span><br/><span>NEWS</span></a></li>
-                <li><a href="/part/about"><span>关于我们</span><br/><span>ABOUT</span></a></li>
-                <li><a href="/search"><span>相关搜索</span><br/><span>SEARCH</span></a></li>
+                <li><a href="#news"><span>最新资讯</span><br/><span>NEWS</span></a></li>
+                <li><a href="#about"><span>关于我们</span><br/><span>ABOUT</span></a></li>
+                <li><a href="/comment"><span>留言板</span><br/><span>COMMENT</span></a></li>
             </div>
         </ul>
         <div id="navbar-logo">
             <img src="{% static 'common/img/tongji_logo.png' %}" alt="">
             <p>同济大学博物馆 <br/> THE MUSEUM OF TONGJI UNIVERSITY</p>
         </div>
-    </header>
-    {% block main %}
-    {% endblock %}
+    </div>
+</header>
+{% block main %}
 
-    <footer id="footer">
+{% endblock %}
 
-    </footer>
-    <script src="{% static 'common/js/main.js' %}"></script>
-    {% block scripts %}
-    {% endblock %}
+<footer id="footer">
+
+</footer>
+<script src="{% static 'common/js/jquery.smooth.scroll.min.js' %}"></script>
+<script src="{% static 'common/js/main.js' %}"></script>
+{% block scripts %}
+{% endblock %}
 </body>
 </html>

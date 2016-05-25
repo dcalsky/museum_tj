@@ -3,5 +3,9 @@
  */
 
 $(document).ready(function () {
-    console.log("museum")
+    $('a').smoothScroll({
+        easing: 'swing',
+        speed: 400,
+        offset: -190
+    })
 })
