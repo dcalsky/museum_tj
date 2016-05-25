@@ -6,6 +6,7 @@ var INITIAL_PAGE = 1
 var NEXT_PAGE = 1
 var PREV_PAGE = -1
 var TOP_STEP = 130
+var INITIAL = true
 
 
 function Slider(container, next, prev) {
@@ -13,32 +14,28 @@ function Slider(container, next, prev) {
     this.nextContainer = next
     this.prevContainer = prev
     this.comments = []
-    this.page = 0
+    this.page = 1
+    this.count = 0
 }
 
-Slider.prototype.next = function() {
-    this.slide()
+Slider.prototype.next = function () {
+    this.slide(NEXT_PAGE, '-=500px')
 }
 
-Slider.prototype.prev = function() {
-    this.slide()
-    this.load(PREV_PAGE)
+Slider.prototype.prev = function () {
+    this.slide(PREV_PAGE, '+=500px')
 }
 
-Slider.prototype.slide = function () {
-    var commentsElement = $('.comment')
-    commentsElement.each(function() {
-        var top = $(this).offsetTop
-        $(this).animate({
-            width: top + 500
-        }, 1000)
-    })
+Slider.prototype.slide = function (diff, distance) {
+    // var commentsElement = $('.comment')
+    var self = this
+    this.page += diff
+    self.load(diff)
 }
 
-Slider.prototype.load = function (diff) {
+Slider.prototype.load = function (diff, isInitial) {
     var container = this.container
     var containerWidth = container.width()
-    this.page = this.page + diff
     $.ajax({
         url: '/comment/get',
         method: 'get',
@@ -46,11 +43,10 @@ Slider.prototype.load = function (diff) {
         success: function (result) {
             var comments = result.content.comments
             var commentsElement = ''
-            comments.map(function(comment, i) {
+            comments.map(function (comment, i) {
                 var arrow = i % 2 === 0 ? 'right' : 'left'
-                console.log(containerWidth/2)
-                commentsElement += '<li class="comment" style="top: ' + ((i * TOP_STEP) + 20 ) + 'px;' + arrow +':'+ containerWidth / 2 + 'px">\
-                    <div class="point1" style="'+ arrow +':-15px"></div><div class="point2"  style="'+ arrow +':-8px"></div>\
+                commentsElement += '<li class="comment" style="top: ' + ((i * TOP_STEP) + 20 ) + 'px;' + arrow + ':' + containerWidth / 2 + 'px">\
+                    <div class="point1" style="' + arrow + ':-15px"></div><div class="point2"  style="' + arrow + ':-8px"></div>\
                     <div class="title">\
                         ' + comment.title + '\
                     </div>\
@@ -68,7 +64,7 @@ Slider.prototype.load = function (diff) {
 }
 
 Slider.prototype.init = function () {
-    this.load(INITIAL_PAGE)
+    this.load(INITIAL_PAGE, INITIAL)
     this.nextContainer.click(this.next.bind(this))
     this.prevContainer.click(this.prev.bind(this))
 }

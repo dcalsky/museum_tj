@@ -76,7 +76,7 @@
   padding: 0.2rem 1.2rem;
 }
 #appointment textarea {
-  height: 69px;
+  height: 136px;
   min-width: 200px;
 }
 #appointment button {
@@ -105,17 +105,14 @@
 #appoint-form .form-group {
   position: relative;
   margin-right: 0.6rem;
-  height: 75px;
+}
+#appoint-form .form-group > div {
+  margin-bottom: 10px;
 }
 #appoint-form #form-note,
 #appoint-form .form-group {
   display: inline-block;
   vertical-align: top;
-}
-#appoint-form #form-contract {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 #appoint-form #form-submit {
   position: absolute;

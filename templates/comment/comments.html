@@ -1,4 +1,4 @@
-{% include 'home.html' %}
+{% extends 'home.html' %}
 {% load staticfiles %}
 {% block head %}
     <link rel="stylesheet" href="{% static 'comment/css/comment.css' %}">
@@ -10,10 +10,11 @@
     <div id="comments">
         <div id="line"></div>
         <ul id="comments-slider">
-
         </ul>
-        <button id="prev">Prev</button>
-        <button id="next">Next</button>
+        <div class="btn">
+            <button id="prev">-</button>
+            <button id="next">+</button>
+        </div>
     </div>
     <div id="comment-post">
         <form action="{% url 'post' %}" method="post" target="_blank">
