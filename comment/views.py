@@ -12,7 +12,7 @@ def get_comments(request):
 
 @ajax
 def next_comment(request):
-    comments = Comment.objects.filter(verify=True)
+    comments = Comment.objects.filter(verify=True).order_by('-create_time')
     paginator = Paginator(comments, 4)  # Show 25 contacts per page
     page = request.GET.get('page')
     try:

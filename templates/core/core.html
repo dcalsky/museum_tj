@@ -18,15 +18,22 @@
     <div id="core">
         <div id="slider">
             <ul>
-                <li>
-                    <img src="{% static 'core/img/museum.png' %}" alt="">
-                </li>
-                <li>
-                    <img src="{% static 'core/img/wallhaven-19950.png' %}" alt="">
-                </li>
-                <li>
-                    <img src="{% static 'core/img/wallhaven-19950.png' %}" alt="">
-                </li>
+                {% for slider in sliders %}
+                    <li>
+                        {% load static %}
+                        <img src={{ slider.thumbnail.url }} alt=""/>
+                    </li>
+                {% endfor %}
+
+                {#                <li>#}
+                {#                    <img src="{% static 'core/img/museum.png' %}" alt="">#}
+                {#                </li>#}
+                {#                <li>#}
+                {#                    <img src="{% static 'core/img/wallhaven-19950.png' %}" alt="">#}
+                {#                </li>#}
+                {#                <li>#}
+                {#                    <img src="{% static 'core/img/wallhaven-19950.png' %}" alt="">#}
+                {#                </li>#}
             </ul>
         </div>
         <div id="floor">
@@ -34,9 +41,8 @@
                 <span>楼层索引</span>
             </h2>
             <ul>
-                <li>
+                <li onclick="jumpToArticle(1)">
                     <div class="image">
-                        <img src="" alt=""/>
                         <div class="default-image">
                             <span>1F</span>
                         </div>
@@ -47,9 +53,8 @@
                         <p class="name">艺术与创意空间</p>
                     </div>
                 </li>
-                <li>
+                <li onclick="jumpToArticle(2)">
                     <div class="image">
-                        <img src="" alt=""/>
                         <div class="default-image">
                             <span>2F</span>
                         </div>
@@ -60,9 +65,8 @@
                         <p class="name">临时展厅A</p>
                     </div>
                 </li>
-                <li>
+                <li onclick="jumpToArticle(3)">
                     <div class="image">
-                        <img src="" alt=""/>
                         <div class="default-image">
                             <span>3F</span>
                         </div>
@@ -110,58 +114,18 @@
                 <span>网上巡展</span>
             </h2>
             <ul>
-                <li>
-                    <div class="image"><img src="{% static 'core/img/wallhaven-19950.png' %}" alt=""/>
-                        <div class="hover">
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
+                {% for item in exhibitions %}
+                    <li>
+                    <a style="color: #333; text-decoration: blink" href="/part/exhibition/{{ item.id }}">
+                        <div class="image">
+                            <img src={{ item.thumbnail.url }} alt=""/>
                         </div>
-                    </div>
-                    <div class="info">
-                        <h4>"酸奶"书画展</h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="image"><img src="{% static 'core/img/wallhaven-19950.png' %}" alt=""/>
-                        <div class="hover">
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
+                        <div class="info">
+                            <h4>{{ item.title }}</a></h4>
                         </div>
-                    </div>
-                    <div class="info">
-                        <h4>六国无极限</h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="image"><img src="{% static 'core/img/wallhaven-19950.png' %}" alt=""/>
-                        <div class="hover">
-                            <p>1</p>
-                            <p>2</p>
-                            <p>3</p>
-                            <p>4</p>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <h4>科幻印象</h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="image"><img src="{% static 'core/img/wallhaven-19950.png' %}" alt=""/>
-                        <div class="hover">
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <h4>查看更多</h4>
-                    </div>
-                </li>
+                    </a>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
         <div id="news">

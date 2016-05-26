@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 
+
 class Part(models.Model):
     title = models.CharField(max_length=20)
     name = models.CharField(max_length=30)
@@ -15,7 +16,7 @@ class Article(models.Model):
     desc = models.CharField(max_length=150, blank=True)
     content = models.TextField()
     create_time = models.DateTimeField(default=datetime.today())
-    thumbnail = models.ImageField()
+    thumbnail = models.ImageField(blank=True)
     secret = models.BooleanField(default=False)
     page_view = models.IntegerField(default=0)
 

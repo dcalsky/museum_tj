@@ -25,6 +25,7 @@
   min-width: 141px;
   -webkit-transition: box-shadow 0.5s;
   transition: box-shadow 0.5s;
+  cursor: pointer;
 }
 #floor li:hover {
   box-shadow: 2px 3px 4px 5px #eee;
@@ -42,7 +43,7 @@
   color: #818181;
   margin-top: 4rem;
 }
-#floor li .image div {
+#floor li .image .default-image {
   line-height: 100px;
   height: 100px;
   width: 100px;
@@ -52,10 +53,10 @@
   -webkit-transition: background 0.5s;
   transition: background 0.5s;
 }
-#floor li .image div:hover {
+#floor li .image .default-image:hover {
   background: #ff6347;
 }
-#floor li .image div span {
+#floor li .image .default-image span {
   font-size: 2rem;
   font-weight: 600;
   color: #e7e7e7;
