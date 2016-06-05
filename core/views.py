@@ -13,10 +13,10 @@ def home(request):
     sliders = slider_part.article_set.order_by('create_time')[:5] or []
     news = news_part.article_set.order_by('create_time')[:5] or []
     exhibitions = exhibitions_part.article_set.order_by('create_time')[:4] or []
-    appoint_form = AppointForm()
+    # appoint_form = AppointForm()
     return render(request, 'core/core.html', {
         'news': news,
         'exhibitions': exhibitions,
-        'sliders': sliders,
-        'appoint_form': appoint_form
+        'sliders': sliders
+        # 'appoint_form': appoint_form
     })

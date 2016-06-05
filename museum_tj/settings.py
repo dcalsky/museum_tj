@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'hi#6-nwfvuhve$df1j$y-q@qw9!2l6*14)q67a21=xkrndy2ow'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -126,6 +126,4 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/home/dcalsky/www/museum_tj/static'
 MEDIA_ROOT = '/home/dcalsky/www/museum_tj/static/media'
 MEDIA_URL = '/static/media/'
-STATICFILES_DIRS = [
-    'static/'
-]
+
