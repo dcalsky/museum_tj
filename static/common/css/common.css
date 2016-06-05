@@ -57,7 +57,11 @@ ul {
   margin-left: -119px;
   color: #283593;
 }
+#navbar-logo a {
+  text-decoration: none;
+}
 #navbar-logo p {
+  color: #000;
   margin: 0;
 }
 #navbar-logo img {

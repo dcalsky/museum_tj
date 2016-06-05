@@ -17,19 +17,21 @@
     <div id="header">
         <ul id="navbar">
             <div id="logo-left">
-                <li><a href="/museum"><span>博物馆介绍</span><br/><span>HOME</span></a></li>
+                <li><a href="/"><span>首页</span><br/><span>HOME</span></a></li>
                 <li><a href="#exhibition"><span>网上巡展</span><br/><span>EXHIBITION</span></a></li>
                 <li><a href="#floor"><span>参观引导</span><br/><span>GUIDE</span></a></li>
             </div>
             <div id="logo-right">
                 <li><a href="#news"><span>最新资讯</span><br/><span>NEWS</span></a></li>
                 <li><a href="#about"><span>关于我们</span><br/><span>ABOUT</span></a></li>
-                <li><a href="/museum/comment"><span>留言板</span><br/><span>COMMENT</span></a></li>
+                <li><a href="./comment"><span>留言板</span><br/><span>COMMENT</span></a></li>
             </div>
         </ul>
         <div id="navbar-logo">
-            <img src="{% static 'common/img/tongji_logo.png' %}" alt="">
-            <p>同济大学博物馆 <br/> THE MUSEUM OF TONGJI UNIVERSITY</p>
+            <a href="/">
+                <img src="{% static 'common/img/tongji_logo.png' %}" alt="">
+                <p>同济大学博物馆 <br/> THE MUSEUM OF TONGJI UNIVERSITY</p>
+            </a>
         </div>
     </div>
 </header>
