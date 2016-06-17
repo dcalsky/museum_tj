@@ -116,91 +116,64 @@
             <ul>
                 {% for item in exhibitions %}
                     <li>
-                    <a style="color: #333; text-decoration: blink" href="/part/exhibition/{{ item.id }}">
-                        <div class="image">
+                        <a style="color: #333; text-decoration: blink" href="/part/exhibition/{{ item.id }}">
+                            <div class="image">
+                                <img src={{ item.thumbnail.url }} alt=""/>
+                            </div>
+                            <div class="info">
+                                <h4>
+                            {{ item.title }}</a></h4>
+                    </div>
+                    </a>
+                    </li>
+                {% endfor %}
+        </ul>
+    </div>
+    <div id="news">
+        <h2 class="part-title">
+            <span>最新资讯</span>
+        </h2>
+        <div id="news-slider">
+            <div id="bg"></div>
+            <ul>
+                {% for item in news %}
+                    <li>
+                        <div class="img">
                             <img src={{ item.thumbnail.url }} alt=""/>
                         </div>
                         <div class="info">
-                            <h4>{{ item.title }}</a></h4>
+                            <h1 class="title">{{ item.title }}</h1>
+                            <hr/>
+                            <p>
+                                {{ item.desc }}
+                            </p>
                         </div>
-                    </a>
                     </li>
                 {% endfor %}
             </ul>
         </div>
-        <div id="news">
-            <h2 class="part-title">
-                <span>最新资讯</span>
-            </h2>
-            <div id="news-slider">
-                <div id="bg"></div>
-                <ul>
-                    <li>
-                        <div class="img">
-                            <img src="{% static 'core/img/img.png' %}" alt=""/>
-                        </div>
-                        <div class="info">
-                            <h1 class="title">创意无极限</h1>
-                            <hr/>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, aut,
-                                consequuntur distinctio dolor dolorem dolores ducimus hic ipsa libero nobis nulla
-                                officiis omnis quo reiciendis rerum sapiente vel. Provident.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img">
-                            <img src="{% static 'core/img/img.png' %}" alt=""/>
-                        </div>
-                        <div class="info">
-                            <h1 class="title">创意无极限1</h1>
-                            <hr/>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, aut,
-                                consequuntur distinctio dolor dolorem dolores ducimus hic ipsa libero nobis nulla
-                                officiis omnis quo reiciendis rerum sapiente vel. Provident.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img">
-                            <img src="{% static 'core/img/img.png' %}" alt=""/>
-                        </div>
-                        <div class="info">
-                            <h1 class="title">创意无极限1</h1>
-                            <hr/>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores, aut,
-                                consequuntur distinctio dolor dolorem dolores ducimus hic ipsa libero nobis nulla
-                                officiis omnis quo reiciendis rerum sapiente vel. Provident.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div id="about">
-            <h2 class="part-title">
-                <span>关于我们</span>
-            </h2>
-            <div id="about-main">
-                <img src="{% static "core/img/map.jpg" %}" alt="">
-                <div id="contract-board">
-                    <div class="title"><span>联系我们</span></div>
-                    <div class="info">
-                        <p><span><i class="fa fa-mobile" aria-hidden="true"></i>021-65983563</span><span><i
-                                class="fa fa-weixin" aria-hidden="true"></i>微信公众号: tongjiBWG</span></p>
-                        <p><span><i class="fa fa-location-arrow" aria-hidden="true"></i>地址: 中国 上海 四平路 1239号一二九大楼</span>
-                        </p>
-                    </div>
-                    <form action="">
-                        <textarea placeholder="意见与建议"></textarea>
-                        <button type="submit">发送</button>
-                    </form>
+    </div>
+    <div id="about">
+        <h2 class="part-title">
+            <span>关于我们</span>
+        </h2>
+        <div id="about-main">
+            <img src="{% static "core/img/map.jpg" %}" alt="">
+            <div id="contract-board">
+                <div class="title"><span>联系我们</span></div>
+                <div class="info">
+                    <p><span><i class="fa fa-mobile" aria-hidden="true"></i>021-65983563</span><span><i
+                            class="fa fa-weixin" aria-hidden="true"></i>微信公众号: tongjiBWG</span></p>
+                    <p><span><i class="fa fa-location-arrow" aria-hidden="true"></i>地址: 中国 上海 四平路 1239号一二九大楼</span>
+                    </p>
                 </div>
+                <form action="">
+                    <textarea placeholder="意见与建议"></textarea>
+                    <button type="submit">发送</button>
+                </form>
             </div>
         </div>
+    </div>
     </div>
     {#    {% for news_item in news %}#}
     {#        {{ news_item.desc }}#}
