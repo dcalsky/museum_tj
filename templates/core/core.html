@@ -18,11 +18,11 @@
     <div id="core">
         <div id="slider">
             <ul>
-                {% for slider in sliders %}
+                {% for item in sliders %}
                     <li>
                         {% load static %}
                         <a href="/part/slider/{{ item.id }}">
-                            <img src={{ slider.thumbnail.url }} alt=""/>
+                            <img src={{ item.thumbnail.url }} alt="slider"/>
                         </a>
                     </li>
                 {% endfor %}
