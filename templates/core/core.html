@@ -21,19 +21,11 @@
                 {% for slider in sliders %}
                     <li>
                         {% load static %}
-                        <img src={{ slider.thumbnail.url }} alt=""/>
+                        <a href="/part/slider/{{ item.id }}">
+                            <img src={{ slider.thumbnail.url }} alt=""/>
+                        </a>
                     </li>
                 {% endfor %}
-
-                {#                <li>#}
-                {#                    <img src="{% static 'core/img/museum.png' %}" alt="">#}
-                {#                </li>#}
-                {#                <li>#}
-                {#                    <img src="{% static 'core/img/wallhaven-19950.png' %}" alt="">#}
-                {#                </li>#}
-                {#                <li>#}
-                {#                    <img src="{% static 'core/img/wallhaven-19950.png' %}" alt="">#}
-                {#                </li>#}
             </ul>
         </div>
         <div id="floor">
@@ -142,7 +134,8 @@
                             <img src={{ item.thumbnail.url }} alt=""/>
                         </div>
                         <div class="info">
-                            <h1 class="title"><a style="color: #283593; text-decoration: blink" href="/part/news/{{ item.id }}">{{ item.title }}</a></h1>
+                            <h1 class="title"><a style="color: #283593; text-decoration: blink"
+                                                 href="/part/news/{{ item.id }}">{{ item.title }}</a></h1>
                             <hr/>
                             <p>
                                 {{ item.desc }}
