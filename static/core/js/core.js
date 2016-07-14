@@ -16,13 +16,13 @@ Slider.prototype.init = function () {
 var jumpToArticle = function (num) {
     switch (num) {
         case 1:
-            window.location.href = '/part/guide/8'
+            window.location.href = '/museum/part/guide/8'
             break
         case 2:
-            window.location.href = '/part/guide/9'
+            window.location.href = '/museum//part/guide/9'
             break
         case 3:
-            window.location.href = '/part/guide/10'
+            window.location.href = '/museum/part/guide/10'
             break
     }
 }
