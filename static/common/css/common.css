@@ -43,7 +43,6 @@ ul {
 }
 #navbar li span:first-child {
   color: #000 !important;
-  marign-bottom: 5px;
 }
 #navbar li span:last-child {
   color: #ef6c00 !important;
@@ -76,8 +75,9 @@ ul {
     left: 0;
   }
 }
-#navbar #logo-left li:hover {
-  border: 2px solid #f4b3c4;
+#navbar #logo-left li:hover span:first-child {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #283593;
 }
 #navbar #logo-right {
   position: absolute;
@@ -88,8 +88,9 @@ ul {
     right: 0;
   }
 }
-#navbar #logo-right li:hover {
-  border: 2px solid #7ecef4;
+#navbar #logo-right li:hover span:first-child {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #283593;
 }
 footer {
   text-align: center;
