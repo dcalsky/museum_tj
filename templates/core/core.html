@@ -21,7 +21,7 @@
                 {% for item in sliders %}
                     <li>
                         {% load static %}
-                        <a href="/part/slider/{{ item.id }}">
+                        <a href="/museum/part/slider/{{ item.id }}">
                             <img src={{ item.thumbnail.url }} alt="slider"/>
                         </a>
                     </li>
@@ -108,7 +108,7 @@
             <ul>
                 {% for item in exhibitions %}
                     <li>
-                        <a style="color: #333; text-decoration: blink" href="/part/exhibition/{{ item.id }}">
+                        <a style="color: #333; text-decoration: blink" href="/museum/part/exhibition/{{ item.id }}">
                             <div class="image">
                                 <img src={{ item.thumbnail.url }} alt=""/>
                             </div>
@@ -135,7 +135,7 @@
                         </div>
                         <div class="info">
                             <h1 class="title"><a style="color: #283593; text-decoration: blink"
-                                                 href="/part/news/{{ item.id }}">{{ item.title }}</a></h1>
+                                                 href="/museum/part/news/{{ item.id }}">{{ item.title }}</a></h1>
                             <hr/>
                             <p>
                                 {{ item.desc }}
