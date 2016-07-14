@@ -11,10 +11,10 @@ from search import views as view_search
 
 urlpatterns = [
     url(r'^museum/$', view_home.home, name='home'),
-    url(r'^museum/admin/', admin.site.urls),
-    url(r'^museum/part/(?P<part_name>\w+)/', include('vector.urls'), name='part'),
-    url(r'^museum/search$', view_search.search, name='search'),
-    url(r'^museum/appoint$', view_appoint.apply_appoint, name='appoint'),
-    url(r'^museum/comment', include('comment.urls')),
-    url(r'^museum/summernote/', include('django_summernote.urls')),
+    url(r'admin/', admin.site.urls),
+    url(r'^part/(?P<part_name>\w+)/', include('vector.urls'), name='part'),
+    url(r'^search$', view_search.search, name='search'),
+    url(r'^appoint$', view_appoint.apply_appoint, name='appoint'),
+    url(r'^comment', include('comment.urls')),
+    url(r'^summernote/', include('django_summernote.urls')),
 ]
