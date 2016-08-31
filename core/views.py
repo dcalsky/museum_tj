@@ -39,5 +39,4 @@ def load_more(request, page=1):
     #         "url": news.get('thumbnail').url
     #     }
     # }, news_total)
-    print(type(res))
     return HttpResponse(news_json, content_type="application/json")
