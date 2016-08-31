@@ -2,16 +2,24 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="PostgreSQL - museum@localhost" uuid="1dde8f10-3b93-46d3-8ba9-a85bd9b0b172">
+      <database-info product="PostgreSQL" version="9.4.5" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>dcalsky</user-name>
-      <schema-pattern>museum.pg_catalog museum.public</schema-pattern>
-      <default-schemas>museum.public</default-schemas>
+      <introspection-scope>museum:pg_catalog,public</introspection-scope>
+      <resolve-scope>museum:public</resolve-scope>
     </data-source>
     <data-source name="Django default" uuid="6a504683-5869-43f8-83ed-f8d310b6e6f1">
+      <database-info product="PostgreSQL" version="9.4.5" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <user-name>dcalsky</user-name>
       <user-password>dfd8dfcfdfcbdfc9dfde</user-password>
-      <schema-pattern>museum.pg_catalog museum.public</schema-pattern>
-      <default-schemas>museum.public</default-schemas>
+      <introspection-scope>museum:pg_catalog,public</introspection-scope>
+      <resolve-scope>museum:public</resolve-scope>
     </data-source>
   </component>
 </project>

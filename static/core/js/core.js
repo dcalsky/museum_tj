@@ -32,6 +32,9 @@ $(document).ready(function () {
     var newsSlider = new Slider($('#news-slider'))
     slider.init()
     newsSlider.init()
+    $('#load-more').click(function () {
+
+    })
     // $('#floor li').click(function () {
     //     console.log(e)
     // })

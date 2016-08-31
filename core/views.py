@@ -20,3 +20,17 @@ def home(request):
         'sliders': sliders
         # 'appoint_form': appoint_form
     })
+
+
+def load_more(request, page=1):
+    news_part = Part.objects.get(name='news')
+    exhibitions_part = Part.objects.get(name='exhibition')
+
+    news = news_part.article_set.order_by('create_time')[page * 5: (page + 1) * 5] or []
+    exhibitions = exhibitions_part.article_set.order_by('create_time')[page * 4: (page + 1) * 4] or []
+
+    return render(request, 'core/core.html', {
+        'news': news,
+        'exhibitions': exhibitions
+        # 'appoint_form': appoint_form
+    })

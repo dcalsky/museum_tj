@@ -113,61 +113,63 @@
                                 <img src={{ item.thumbnail.url }} alt=""/>
                             </div>
                             <div class="info">
-                                <h4>
-                            {{ item.title }}</a></h4>
-                    </div>
-                    </a>
+                                <h4>{{ item.title }}</h4>
+                            </div>
+                        </a>
                     </li>
                 {% endfor %}
-        </ul>
-    </div>
-    <div id="news">
-        <h2 class="part-title">
-            <span>最新资讯</span>
-        </h2>
-        <div id="news-slider">
-            <div id="bg"></div>
-            <ul>
-                {% for item in news %}
-                    <li>
-                        <div class="img">
-                            <img src={{ item.thumbnail.url }} alt=""/>
-                        </div>
-                        <div class="info">
-                            <h1 class="title"><a style="color: #283593; text-decoration: blink"
-                                                 href="/museum/part/news/{{ item.id }}">{{ item.title }}</a></h1>
-                            <hr/>
-                            <p>
-                                {{ item.desc }}
-                            </p>
-                        </div>
-                    </li>
-                {% endfor %}
+                <div>
+
+                </div>
             </ul>
         </div>
-    </div>
-    <div id="about">
-        <h2 class="part-title">
-            <span>关于我们</span>
-        </h2>
-        <div id="about-main">
-            <img src="{% static "core/img/map.jpg" %}" alt="">
-            <div id="contract-board">
-                <div class="title"><span>联系我们</span></div>
-                <div class="info">
-                    <p><span><i class="fa fa-mobile" aria-hidden="true"></i>021-65983563</span><span><i
-                            class="fa fa-weixin" aria-hidden="true"></i>微信公众号: tongjiBWG</span></p>
-                    <p><span><i class="fa fa-location-arrow" aria-hidden="true"></i>地址: 中国 上海 四平路 1239号一二九大楼</span>
-                    </p>
-                </div>
-                <form action="{% url 'post' %}" method="post" target="_blank">
-                    <input style="display: none" id="id_title" name="title" type="text" placeholder="标题"/>
-                    <textarea name="content" placeholder="意见与建议"></textarea>
-                    <button type="submit">发送</button>
-                </form>
+        <div id="news">
+            <h2 class="part-title">
+                <span>最新资讯</span>
+            </h2>
+            <div id="news-slider">
+                <div id="bg"></div>
+                <ul>
+                    {% for item in news %}
+                        <li>
+                            <div class="img">
+                                <img src={{ item.thumbnail.url }} alt=""/>
+                            </div>
+                            <div class="info">
+                                <h1 class="title"><a style="color: #283593; text-decoration: blink"
+                                                     href="/museum/part/news/{{ item.id }}">{{ item.title }}</a></h1>
+                                <hr/>
+                                <p>
+                                    {{ item.desc }}
+                                </p>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
-    </div>
+        <div id="about">
+            <h2 class="part-title">
+                <span>关于我们</span>
+            </h2>
+            <div id="about-main">
+                <img src="{% static "core/img/map.jpg" %}" alt="">
+                <div id="contract-board">
+                    <div class="title"><span>联系我们</span></div>
+                    <div class="info">
+                        <p><span><i class="fa fa-mobile" aria-hidden="true"></i>021-65983563</span><span><i
+                                class="fa fa-weixin" aria-hidden="true"></i>微信公众号: tongjiBWG</span></p>
+                        <p><span><i class="fa fa-location-arrow" aria-hidden="true"></i>地址: 中国 上海 四平路 1239号一二九大楼</span>
+                        </p>
+                    </div>
+                    <form action="{% url 'post' %}" method="post" target="_blank">
+                        <input style="display: none" id="id_title" name="title" type="text" placeholder="标题"/>
+                        <textarea name="content" placeholder="意见与建议"></textarea>
+                        <button type="submit">发送</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     {#    {% for news_item in news %}#}
     {#        {{ news_item.desc }}#}

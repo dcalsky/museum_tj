@@ -10,7 +10,7 @@ from search import views as view_search
 
 
 urlpatterns = [
-    url(r'^museum/$', view_home.home, name='home'),
+    url(r'^museum/$', include('home.urls'), name='home'),
     url(r'admin/', admin.site.urls),
     url(r'part/(?P<part_name>\w+)/', include('vector.urls'), name='part'),
     url(r'^search$', view_search.search, name='search'),
