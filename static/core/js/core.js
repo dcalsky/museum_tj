@@ -28,7 +28,7 @@ var jumpToArticle = function (num) {
 }
 
 $(document).ready(function () {
-    var page = 2
+    var page = 1
     var slider = new Slider($('#slider'))
     var newsSlider = new Slider($('#news-slider'))
     slider.init()
@@ -37,7 +37,21 @@ $(document).ready(function () {
         $.ajax({
             url: '/museum/' + page,
             success: function (res) {
-                console.log(res)
+                res.map(function (news) {
+                    $('#news_content').append(
+                        '<li>' +
+                            '<a style="color: #333; text-decoration: blink" href="/museum/part/exhibition/' + news.pk + '">' +
+                                '<div class="image">' +
+                                    '<img src="' + news.fields.thumbnail + '" alt=""/>' +
+                                '</div>' +
+                                '<div class="info">' +
+                                    '<h4>' + news.fields.title + '</h4>' +
+                                '</div>'+
+                            '</a>' +
+                        '</li>'
+                    )
+                })
+                ++page
             }
         })
     })

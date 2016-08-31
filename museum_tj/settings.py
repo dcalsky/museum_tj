@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django_ajax',
     'vector',
     'appoint',
-    'comment'
+    'comment',
+    'core'
 ]
 
 MIDDLEWARE_CLASSES = [
