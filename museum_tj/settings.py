@@ -124,8 +124,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/museum/static/'
-# STATIC_ROOT = '/home/dcalsky/www/museum_tj/static'
-STATIC_ROOT = '/Users/Dcalsky/python/museum_tj/static'
-# MEDIA_ROOT = '/home/dcalsky/www/museum_tj/static/media'
-MEDIA_ROOT = '/Users/Dcalsky/python/museum_tj/static/media'
+STATIC_ROOT = '/home/dcalsky/www/museum_tj/static'
+MEDIA_ROOT = '/home/dcalsky/www/museum_tj/static/media'
 MEDIA_URL = '/museum/static/media/'
