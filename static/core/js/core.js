@@ -28,7 +28,7 @@ var jumpToArticle = function (num) {
 }
 
 $(document).ready(function () {
-    var page = 1
+    var page = 0
     var slider = new Slider($('#slider'))
     var newsSlider = new Slider($('#news-slider'))
     slider.init()
