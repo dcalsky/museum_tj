@@ -16,7 +16,6 @@ def home(request):
     sliders = slider_part.article_set.order_by('create_time')[:5] or []
     news = news_part.article_set.order_by('create_time')[:5] or []
     exhibitions = exhibitions_part.article_set.order_by('create_time')[:4] or []
-    # appoint_form = AppointForm()
     return render(request, 'core/core.html', {
         'news': news,
         'exhibitions': exhibitions,
@@ -28,6 +27,6 @@ def home(request):
 def load_more(request, page=1):
     page = int(page)
     exhibitions_part = Part.objects.get(name='exhibition')
-    exhibitions_total = exhibitions_part.article_set.order_by('create_time')[page * 5: (page + 1) * 5] or []
+    exhibitions_total = exhibitions_part.article_set.order_by('create_time')[page * 4: (page + 1) * 4] or []
     exhibitions_json = serialize("json", exhibitions_total)
     return HttpResponse(exhibitions_json, content_type="application/json")

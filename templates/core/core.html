@@ -118,12 +118,13 @@
                         </a>
                     </li>
                 {% endfor %}
-                <div>
-                    <button id="load-more" style="border: 2px solid #1967d2; background: transparent; padding: 10px 100px; border-radius: 10px; font-size: 1.2rem; margin-top: 30px; cursor: pointer;">
-                        更多
-                    </button>
-                </div>
             </ul>
+            <div>
+                <button id="load-more"
+                        style="border: 2px solid #1967d2; background: transparent; padding: 10px 100px; border-radius: 10px; font-size: 1.2rem; margin-top: 30px; cursor: pointer;">
+                    更多
+                </button>
+            </div>
         </div>
         <div id="news">
             <h2 class="part-title">
@@ -139,7 +140,8 @@
                             </div>
                             <div class="info">
                                 <h1 class="title">
-                                    <a style="color: #283593; text-decoration: blink" href="/museum/part/news/{{ item.id }}">{{ item.title }}</a>
+                                    <a style="color: #283593; text-decoration: blink"
+                                       href="/museum/part/news/{{ item.id }}">{{ item.title }}</a>
                                 </h1>
                                 <hr/>
                                 <p>
