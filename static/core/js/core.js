@@ -35,7 +35,7 @@ $(document).ready(function () {
     newsSlider.init()
     $('#load-more').click(function () {
         $.ajax({
-            url: '/' + page,
+            url: '/museum/' + page,
             success: function (res) {
                 console.log(res)
             }
