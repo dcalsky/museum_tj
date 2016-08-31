@@ -38,11 +38,12 @@ $(document).ready(function () {
             url: '/museum/' + page,
             success: function (res) {
                 res.map(function (news) {
+                    var url = '/museum/static/media/' + news.fields.thumbnail.substr(2)
                     $('#news_content').append(
                         '<li>' +
                             '<a style="color: #333; text-decoration: blink" href="/museum/part/exhibition/' + news.pk + '">' +
                                 '<div class="image">' +
-                                    '<img src="' + news.fields.thumbnail + '" alt=""/>' +
+                                    '<img src="' + url + '" alt=""/>' +
                                 '</div>' +
                                 '<div class="info">' +
                                     '<h4>' + news.fields.title + '</h4>' +

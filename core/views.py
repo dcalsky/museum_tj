@@ -27,16 +27,7 @@ def home(request):
 
 def load_more(request, page=1):
     page = int(page)
-    news_part = Part.objects.get(name='news')
-    # exhibitions_part = Part.objects.get(name='exhibition')
-    news_total = news_part.article_set.order_by('create_time')[page * 5: (page + 1) * 5] or []
-    news_json = serialize("json", news_total)
-    # exhibitions = exhibitions_part.article_set.order_by('create_time')[page * 4: (page + 1) * 4] or []
-    # news_json = map(lambda news: {
-    #     "id": news.get('id'),
-    #     "title": news.get('title'),
-    #     "thumbnail": {
-    #         "url": news.get('thumbnail').url
-    #     }
-    # }, news_total)
-    return HttpResponse(news_json, content_type="application/json")
+    exhibitions_part = Part.objects.get(name='exhibition')
+    exhibitions_total = exhibitions_part.article_set.order_by('create_time')[page * 5: (page + 1) * 5] or []
+    exhibitions_json = serialize("json", exhibitions_total)
+    return HttpResponse(exhibitions_json, content_type="application/json")
