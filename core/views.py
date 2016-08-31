@@ -1,5 +1,6 @@
 # coding=utf-8
 from django.shortcuts import render
+from django.http import JsonResponse
 
 from vector.models import Article, Part
 from appoint.forms import AppointForm
@@ -24,13 +25,15 @@ def home(request):
 
 def load_more(request, page=1):
     news_part = Part.objects.get(name='news')
-    exhibitions_part = Part.objects.get(name='exhibition')
+    # exhibitions_part = Part.objects.get(name='exhibition')
 
-    news = news_part.article_set.order_by('create_time')[page * 5: (page + 1) * 5] or []
-    exhibitions = exhibitions_part.article_set.order_by('create_time')[page * 4: (page + 1) * 4] or []
-
-    return render(request, 'core/core.html', {
-        'news': news,
-        'exhibitions': exhibitions
-        # 'appoint_form': appoint_form
-    })
+    news_total = news_part.article_set.order_by('create_time')[page * 5: (page + 1) * 5] or []
+    # exhibitions = exhibitions_part.article_set.order_by('create_time')[page * 4: (page + 1) * 4] or []
+    news_json = map(lambda news: {
+        "id": news.get('id'),
+        "title": news.get('title'),
+        "thumbnail": {
+            "url": news.get('thumbnail').url
+        }
+    }, news_total)
+    return JsonResponse(news_json)

@@ -28,12 +28,18 @@ var jumpToArticle = function (num) {
 }
 
 $(document).ready(function () {
+    var page = 2
     var slider = new Slider($('#slider'))
     var newsSlider = new Slider($('#news-slider'))
     slider.init()
     newsSlider.init()
     $('#load-more').click(function () {
-
+        $.ajax({
+            url: '/' + page,
+            success: function (res) {
+                console.log(res)
+            }
+        })
     })
     // $('#floor li').click(function () {
     //     console.log(e)
