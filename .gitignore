@@ -201,4 +201,6 @@ ENV/
 
 # Special dirctory
 static/
+!comment/static
+!core/static
 media/
