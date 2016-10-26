@@ -1,0 +1,25 @@
+{
+  "name": "museum",
+  "homepage": "https://github.com/dcalsky/museum_tj",
+  "authors": [
+    "dcalsky <dcalsky@163.com>"
+  ],
+  "description": "",
+  "main": "",
+  "keywords": [
+    "museum"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}

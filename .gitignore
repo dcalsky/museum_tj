@@ -203,4 +203,5 @@ ENV/
 static/
 !comment/static
 !core/static
+core/static/common/bower_components
 media/

@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from core import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'museum/', include('core.urls'), name='home'),
     url(r'museum/admin/', admin.site.urls, name='admin'),
-    url(r'museum/comment', include('comment.urls')),
-    url(r'museum/summernote/', include('django_summernote.urls')),
-]
+    url(r'museum/comment', include('comment.urls'), name='comment'),
+    url(r'museum/summernote/', include('django_summernote.urls'))
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

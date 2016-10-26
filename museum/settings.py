@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_summernote',
     'core',
+    'comment'
 ]
 
 MIDDLEWARE = [
@@ -125,6 +126,7 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(STATIC_ROOT, "media")
-STATIC_URL = '/static/'
-MEDIA_URL = '/media/'
+STATIC_URL = '/museum/static/'
+MEDIA_URL = '/museum/media/'
+URL_PREFIX = "/museum"
 
